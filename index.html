@@ -1,487 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HON</title>
-    <script data-ad-client="ca-pub-2971415669025221" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <style>
-    td { white-space:pre;
-        border: 1px solid #000 }
-    .score { width: 70px;
-    display:inline-block;}
-    .selected {
-    background: lightBlue
-    }
-    </style>
+  <title>이호동 Resume</title>
+  <meta charset="utf-8">
+  <link href="main.css" media="screen" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./images/favicon.ico" />
 </head>
 <body>
-    <div style="position:fixed; background-color:#BBB">
-        <label class="score" > 총 점수</label>
-        <label class="score" >사용 점수</label>
-        <label class="score" >남은 점수</label>
-        <br>
-        <input class="score" id="total" value='0' onclick="select()">
-        <label class="score" id="using">0</label>
-        <label class="score" id="remain">0</label>
-    </div>
-    <div style="width:245px; height:45px; ">
+  <header class="header-details">
+    <h1 class="name">이 호 동 LEE HODONG | </h1>
+      <article class="links-container">
+        <a class="links" href="https://github.com/nauco" target="_blank"><img src="./images/gh_icon.png" alt="github icon" width="21" height="21">GitHub</a>
+        <a class="links" href="https://www.linkedin.com/in/hodong-lee-41251a1a9" target="_blank"><img src="./images/in_icon.png" alt="linkedin icon" width="18" height="18">LinkedIn</a>
+      </article><br>
+      <article class="contact-information">
+        <p class="contact-deets">devops | 메가존클라우드 2021.03 ~| </p>
+        <a class="contact-deets links" href="mailto:hodong42+dev@gmail.com">hodong42+dev@gmail.com</a>
+      </article>
+  </header>
+  <section class="content">
+    <h2 class="category-headers"><hr class="main_divider">Summary</h2>
+      <p class="category-description-main">
+        번뜩이는 아이디어로 문제를 쉽게 해결할 때 행복합니다.
+      </p>
+      <p class="category-description-main">
+        아래와 같은 생각과 행동을 추구합니다.
+      </p>
+      <p>
+        <ul class="category-description-ul">          
+          <li>A DevOps Best Practice is Communication.</li>
+          <li>동료들의 능력을 극대화 시켜주는  함께 성장하도록 공유하고, 논의를 즐깁니다.</li>
+          <li>상대방이 충분히 이해할 수 있도록, 생각의 흐름을 드러내어 설명합니다.</li>
+          <li>문제 해결에 주도적으로 </li>
+          <li>문제나 도움에는 적극적으로 나섭니다.</li>           
+        </ul>
+      </p>
+      <p class="category-description-main">목표는 CTO입니다.</p>    
 
-    </div>
+    <h2 class="category-headers"><hr class="main_divider">Skills</h2>
+      <p class="category-description-main">Kubernetes | AWS </p>
 
-    <table id="tbl1">
-        <tr>
-            <td></td>
-            <td>1 (7)</td>
-            <td>2 (15)</td>
-            <td>3 (26)</td>
-            <td>4 (53)</td>
-            <td>5 (90)</td>
-            <td>6 (139)</td>
-            <td>7 (201)</td>
-            <td>8 (277)</td>
-            <td>9 (368)</td>
-            <td>10 (474)</td>
-            <td>11 (590)</td>
-            <td>12 (730)</td>
-            <td>13 (880)</td>
-            <td>14 (1060)</td>
-            <td>15 (1250)</td>
-            <td>16 (1460)</td>
-            <td>17 (1690)</td>
-            <td>18 (1940)</td>
-            <td>19 (2210)</td>
-            <td>20 (2500)</td>
-        </tr>
-        <tr>
-            <td>공격</td>
-            <td>치명타 +2%</td>
-            <td>모든 대미지 +1</td>
-            <td>명중 +1</td>
-            <td>더블 확률 +1%,
-PVE 추가 대미지 +1</td>
-            <td>대미지 내성 무시 +1%,
-PVP 추가 대미지 +1</td>
-            <td>치명타 +3%</td>
-            <td>모든 대미지 +2</td>
-            <td>명중 +1</td>
-            <td>더블 확률 +1%,
-PVE 추가 대미지 +1</td>
-            <td>대미지 내성 무시 +1%,
-PVP 추가 대미지 +1</td>
-            <td>치명타 +4%,
-스턴 대상 추가 리덕션 무시 +1</td>
-            <td>모든 대미지 +3</td>
-            <td>명중 +2,
-스턴 대상 추가 리덕션 무시 +1</td>
-            <td>더블 확률 +1%</td>
-            <td>대미지 내성 무시 +1%</td>
-            <td>치명타 +5%,
-스턴 대상 추가 리덕션 무시 +1</td>
-            <td>모든 대미지 +4</td>
-            <td>명중 +2,
-스턴 대상 추가 리덕션 무시 +2</td>
-            <td>더블 확률 +1%,
-PVE 추가 대미지 +2</td>
-            <td>대미지 내성 무시 +2%,
-PVP 추가 대미지 +2</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 인크리즈 어택</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 웨폰 마스터리</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성 인크리즈 더블 I</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 인크리즈 스킬 파워</td>
-        </tr>
-        <tr>
-            <td>증폭</td>
-            <td>치명타 시 추가 대미지 +2,
-스킬 대미지 증폭 +1%</td>
-            <td>더블 확률 +1%</td>
-            <td>무기 대미지 증폭 +2%,
-모든 속성 증폭 +2%</td>
-            <td>막기 관통 +1%</td>
-            <td>스킬 대미지 증폭 +2%</td>
-            <td>치명타 시 추가 대미지 +3,
-스킬 대미지 증폭 +2%</td>
-            <td>더블 확률 +1%</td>
-            <td>무기 대미지 증폭 +3%,
-모든 속성 증폭 +3%</td>
-            <td>막기 관통 +2%</td>
-            <td>스킬 대미지 증폭 +2%</td>
-            <td>치명타 시 추가 대미지 +4,
-스킬 대미지 증폭 +2%</td>
-            <td>더블 확률 +2%</td>
-            <td>무기 대미지 증폭 +5%,
-모든 속성 증폭 +4%</td>
-            <td>막기 관통 +3%</td>
-            <td>스킬 대미지 증폭 +4%</td>
-            <td>치명타 시 추가 대미지 +5,
-스킬 대미지 증폭 +2%</td>
-            <td>더블 확률 +2%</td>
-            <td>무기 대미지 증폭 +5%,
-모든 속성 증폭 +5%</td>
-            <td>막기 관통 +4%</td>
-            <td>스킬 대미지 증폭 +5%</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 웨폰 블록 I</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 인크리즈 크리티컬</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 피어스 리덕션</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 로얄 웨폰 마스터리</td>
-        </tr>
-        <tr>
-            <td>적중</td>
-            <td>명중 +1, 
-상태이상 적중 +2%</td>
-            <td>PVE 명중 +1,
-스턴 대상 추가 명중 +1</td>
-            <td>PVP 명중 +1, 
-스킬 명중 +1</td>
-            <td>절대 명중률 +1%</td>
-            <td>스턴 적중 +1%, 
-홀드 적중 +1%</td>
-            <td>명중 +1, 
-상태이상 적중 +3%</td>
-            <td>PVE 명중 +1, 
-스턴 대상 추가 명중 +1</td>
-            <td>PVP 명중 +1, 
-스킬 명중 +1</td>
-            <td>절대 명중률 +1%</td>
-            <td>스턴 적중 +2%, 
-홀드 적중 +2%</td>
-            <td>명중 +1, 
-상태이상 적중 +4%</td>
-            <td>PVE 명중 +1, 
-스턴 대상 추가 명중 +1</td>
-            <td>PVP 명중 +1, 
-스킬 명중 +1</td>
-            <td>절대 명중률 +1%</td>
-            <td>스턴 적중 +4%, 
-홀드 적중 +4%</td>
-            <td>명중 +1, 
-상태이상 적중 +5%</td>
-            <td>PVE 명중 +2, 
-스턴 대상 추가 명중 +1</td>
-            <td>PVP 명중 +1, 
-스킬 명중 +1</td>
-            <td>절대 명중률 +1%</td>
-            <td>스턴 적중 +6%, 
-홀드 적중 +6%</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 샤프아이</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 쓰러스터 I</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 어큐러시</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 인크리즈 스턴 I</td>
-        </tr>
-        <tr>
-            <td>방어</td>
-            <td>최대 HP +300, 
-PVP 무기 대미지 내성 +1%</td>
-            <td>치명타 저항 +1%, 
-PVP 스킬 대미지 내성 +1%</td>
-            <td>무기 막기 +1%, 
-PVP 무기 대미지 내성 +2%</td>
-            <td>대미지 리덕션 +2, 
-PVP 스킬 대미지 내성 +2%</td>
-            <td>방어력 +2</td>
-            <td>최대 HP +300, 
-PVP 무기 대미지 내성 +1%</td>
-            <td>치명타 저항 +2%, 
-PVP 스킬 대미지 내성 +1%</td>
-            <td>무기 막기 +1%, 
-PVP 무기 대미지 내성 +2%</td>
-            <td>대미지 리덕션 +2, 
-PVP 스킬 대미지 내성 +2%</td>
-            <td>방어력 +2</td>
-            <td>최대 HP +300, 
-PVP 무기 대미지 내성 +2%</td>
-            <td>치명타 저항 +3%, 
-PVP 스킬 대미지 내성 +2%</td>
-            <td>무기 막기 +1%, 
-PVP 무기 대미지 내성 +2%</td>
-            <td>대미지 리덕션 +2, 
-PVP 스킬 대미지 내성 +2%</td>
-            <td>방어력 +2</td>
-            <td>최대 HP +300, 
-PVP 무기 대미지 내성 +2%</td>
-            <td>치명타 저항 +4%, 
-PVP 스킬 대미지 내성 +2%</td>
-            <td>무기 막기 +1%, 
-PVP 무기 대미지 내성 +3%</td>
-            <td>대미지 리덕션 +2, 
-PVP 스킬 대미지 내성 +3%</td>
-            <td>방어력 +2</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 인크리즈 디펜스</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 이베이젼 마스터리</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 웨폰 블록 II</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 인크리즈 리덕션</td>
-        </tr>
-        <tr>
-            <td>생존</td>
-            <td>최대 HP +300, 
-PVP 대미지 내성 +1%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +1%,
-더블 저항 +1%</td>
-           <td>최대 HP +300, 
-PVP 대미지 내성 +1%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +1%,
-방어력 +1</td>
-            <td>대미지 내성 +1%,
-PVP 대미지 내성 +2%</td>
-            <td>최대 HP +300, 
-PVP 대미지 내성 +1%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +1%,
-더블 저항 +1%</td>
-           <td>최대 HP +300, 
-PVP 대미지 내성 +1%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +1%,
-방어력 +1</td>
-            <td>대미지 내성 +1%,
-PVP 대미지 내성 +2%</td>
-            <td>최대 HP +500, 
-PVP 대미지 내성 +2%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +2%,
-더블 저항 +2%</td>
-           <td>최대 HP +500, 
-PVP 대미지 내성 +2%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +2%,
-방어력 +1</td>
-            <td>대미지 내성 +1%,
-PVP 대미지 내성 +2%</td>
-            <td>최대 HP +500, 
-PVP 대미지 내성 +2%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +3%,
-더블 저항 +2%</td>
-           <td>최대 HP +500, 
-PVP 대미지 내성 +2%</td>
-            <td>물약 회볼률 +1%,
-힐 증폭 +3%,
-방어력 +1</td>
-            <td>대미지 내성 +2%,
-PVP 대미지 내성 +2%</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 크리티컬 레지스트</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 하이 포션 I</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 디펜시브 스킬 파워</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 이베이젼 I</td>
-        </tr>
-        <tr>
-            <td>상태이상</td>
-            <td>최대 HP +300, 
-스킬 저항 +1</td>
-            <td>상태이상 시간 감소 +1%,
-홀드 내성 +1%</td>
-            <td>무기 대미지 내성 +2%</td>
-            <td>스킬 대미지 내성 +2%</td>
-            <td>스턴 내성 +1%</td>
-            <td>최대 HP +300, 
-스킬 저항 +1</td>
-            <td>상태이상 시간 감소 +1%,
-홀드 내성 +1%</td>
-            <td>무기 대미지 내성 +2%</td>
-            <td>스킬 대미지 내성 +2%</td>
-            <td>스턴 내성 +1%,
-홀드 내성 +1%</td>
-            <td>최대 HP +300, 
-스킬 저항 +1,
-헤이트 내성 +2%</td>
-            <td>상태이상 시간 감소 +3%,
-홀드 내성 +1%,
-침묵 내성 +2%</td>
-            <td>무기 대미지 내성 +3%</td>
-            <td>스킬 대미지 내성 +3%</td>
-            <td>스턴 내성 +1%,
-중첩 상태이상 내성 +5%</td>
-            <td>최대 HP +300, 
-스킬 저항 +1,
-헤이트 내성 +3%</td>
-            <td>상태이상 시간 감소 +5%,
-홀드 내성 +1%,
-침묵 내성 +3%</td>
-            <td>무기 대미지 내성 +3%</td>
-            <td>스킬 대미지 내성 +3%</td>
-            <td>스턴 내성 +1%,
-중첩 상태이상 내성 +5%</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 레지스트 스킬</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 더블 레지스트 I</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 스턴 레지스트</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>각성: 스턴 베리어 I</td>
-        </tr>
-    </table>
+    <h2 class="category-headers"><hr class="main_divider">Working Experience</h2>
 
-    <script>
-    let table = [7, 15, 26, 53, 90, 139, 201, 277, 368, 474,
-                590, 730, 880, 1060, 1250, 1460, 1690, 1940, 2210, 2500]
-    let active = [0, 200, 800, 1800, 3000]
-    let score = 0 
-    window.onload = function(){
-    document.getElementById("total").addEventListener("blur", function() {
-            document.getElementById("using").innerHTML = score
-            document.getElementById("remain").innerHTML = parseInt(document.getElementById("total").value,10) - score
-    });
+    <a class="primary-titles">DevOps Engineer | MegazoneCloud <p class="links">2021.03 ~ 현재</p></a>
+    <p class="category-description">
+      <ul class="category-description-ul">
+        <li>
+          CI/CD Pipeline on EKS
+          <ul>
+            <li>AWS EKS 위에 jenkins와 argocd를 배포하여 pipeline을 구축, 이미지 저장소는 ECR을 사용</li>
+            <li>CI/CD 동작 알림을 slack으로, 파이프라인 제어를 aws lambda와 api gw, slack을 사용하여 구현</li>
+            <li><a class="links" href="https://github.com/nauco/devops_ojt" target="_blank">#링크</a></li>
+          </ul>
+        </li>
+        <li>
+          사내 서비스 개발팀 EKS기반 인프라 구축과 CI/CD 파이프라인 도입
+          <ul>
+            <li>ECS에서 Kotline – gradle – java sdk를 사용하던 개발팀과 서비스를 EKS로 마이그레이션</li>
+            <li>테라폼으로 aws network resource와 EKS 구축</li>
+            <li>AWS CDK로 약 20개 서비스 파이프라인 구축</li>
+            <li>Argocd로 CD 파이프라인과 EKS 내부 addons과 application 관리</li>
+            <li>클라우드 인프라를 활용한 가용성(HPA, CA) 확보</li>
+            <li>Cloudwatch -> newrelic -> datadog으로 모니터링 방식 변화</li>
+          </ul>
+        </li>        
+      </ul>
+    </p>
 
-    document.getElementById('tbl1').onclick = function(e){
-        var e = e || window.event;
-        var target = e.target || e.srcElement;
-        if(target.tagName.toLowerCase() ==  "td") {
-            if(target.parentNode.rowIndex == 0){
-                return;
-            }
-            if(target.parentNode.rowIndex % 2 == 0){
-                if(target.cellIndex % 5 != 0){
-                    return;
-                }
-                if(target.className == 'selected') {
-                    target.className = ''
-                    console.log(active[target.cellIndex/5])
-                    score -= active[target.cellIndex/5]
-                }
-                else {
-                    target.className = 'selected'
-                    score += active[target.cellIndex/5]
-                }
-                
-            }
-            else{
-                if(target.className == 'selected') {
-                    for(var i=target.cellIndex; i<=20; i++){
-                        if(target.parentNode.cells[i].className == 'selected'){
-                            target.parentNode.cells[i].className = ''
-                            score -= table[i-1]
-                        }
-                    }
-                }
-                else {
-                    for(var i=1; i<=target.cellIndex; i++){
-                        if(target.parentNode.cells[i].className != 'selected'){
-                            target.parentNode.cells[i].className = 'selected'
-                            score += table[i-1]
-                        }
-                    }
-                }
-            }
-            //alert(target.innerHTML + target.parentNode.rowIndex+"행"+target.cellIndex+"열");
 
-            console.log(document.getElementById("total").value)
-            document.getElementById("using").innerHTML = score
-            document.getElementById("remain").innerHTML = parseInt(document.getElementById("total").value,10) - score
-        }
-    };
-};
-    </script>
+
+    <h2 class="category-headers"><hr class="main_divider">Education</h2>
+      <p class="primary-titles">인하대학교 Inha Univ. | <span class="links">2011 3월 – 2017 8월 (졸업)</span></p>
+      <p class="category-details">컴퓨터공학과 GPA 3.60/4.5<br></p>
+    <h2 class="category-headers"><hr class="main_divider">Awards and Certification</h2>
+      <p class="primary-titles"> 금상 | <span class="location">인하대학교 프로그래밍 경시대회 (IUPC)</span></p>
+      <p class="category-details">인하대학교 총장상, 2011.05</p>
+      <p class="primary-titles"> CKA | <span class="location">Certified Kubernetes Administrator</span></p>
+      <p class="category-details">Linux Foundation,  2022.03</p>
+      <p class="primary-titles"> 정보처리기사 
+      <p class="category-details">한국산업인력공단,  2019.08</p>
+     <footer>
+       <hr>
+       <span class="site-footer-credits">This page was generated by <a class="links" href="https://pages.github.com" target="_blank">GitHub Pages</a> customizing the <a class="links" href="https://github.com/LouisaBarrett/resume" target="_blank">Resume </a> by <a class="links" href="https://github.com/LouisaBarrett" target="_blank">Louisa Barrett</a>.</span>
+     </footer>
+  </section>
 </body>
-<html>
